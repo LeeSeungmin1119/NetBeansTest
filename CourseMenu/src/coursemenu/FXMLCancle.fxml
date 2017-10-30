@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="397.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coursemenu.FXMLCancleController">
+    <children>
+        <TableView fx:id="tvCancle" layoutY="65.0" prefHeight="264.0" prefWidth="408.0">
+            <columns>
+                <TableColumn fx:id="cancleName" prefWidth="120.0" text="과목명" />
+                <TableColumn fx:id="cancleDay" prefWidth="64.0" text="요일" />
+                <TableColumn fx:id="cancleTime" prefWidth="137.0" text="시간" />
+                <TableColumn fx:id="cancleProf" prefWidth="73.0" text="교강사" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnCancle" layoutX="330.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnCancleClick" text="수강철회" />
+        <Label layoutX="46.0" layoutY="15.0" text="학번:" />
+        <Label layoutX="46.0" layoutY="41.0" text="년도:" />
+        <Label layoutX="243.0" layoutY="15.0" text="이름:" />
+        <Label layoutX="243.0" layoutY="41.0" text="학기:" />
+        <Label fx:id="lblCancleId" layoutX="78.0" layoutY="15.0" />
+        <Label fx:id="lblCancleYear" layoutX="77.0" layoutY="41.0" />
+        <Label fx:id="lblCancleName" layoutX="271.0" layoutY="15.0" />
+        <Label fx:id="lblCancleSemester" layoutX="270.0" layoutY="41.0" />
+    </children>
+</AnchorPane>

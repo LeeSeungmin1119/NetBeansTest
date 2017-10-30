@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="397.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coursemenu.FXMLApplyController">
+    <children>
+        <TableView fx:id="tvApply" layoutY="65.0" prefHeight="264.0" prefWidth="408.0">
+            <columns>
+                <TableColumn fx:id="applyName" prefWidth="120.0" text="과목명" />
+                <TableColumn fx:id="applyDay" prefWidth="64.0" text="요일" />
+                <TableColumn fx:id="applyTime" prefWidth="137.0" text="시간" />
+                <TableColumn fx:id="applyProf" prefWidth="73.0" text="교강사" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnApply" layoutX="330.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnApplyClick" text="수강신청" />
+        <Button fx:id="btnMap" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnMapClick" text="지도보기" />
+        <Label layoutX="46.0" layoutY="15.0" text="학번:" />
+        <Label layoutX="46.0" layoutY="41.0" text="년도:" />
+        <Label layoutX="243.0" layoutY="15.0" text="이름:" />
+        <Label layoutX="243.0" layoutY="41.0" text="학기:" />
+        <Label fx:id="lblApplyId" layoutX="78.0" layoutY="15.0" />
+        <Label fx:id="lblApplyYear" layoutX="77.0" layoutY="41.0" />
+        <Label fx:id="lblApplyName" layoutX="271.0" layoutY="15.0" />
+        <Label fx:id="lblApplySemester" layoutX="270.0" layoutY="41.0" />
+    </children>
+</AnchorPane>
