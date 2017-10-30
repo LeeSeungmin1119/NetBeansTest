@@ -28,7 +28,7 @@ public class FXMLWebViewController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle rb) 
     {
-        webView.getEngine().load("http://www.naver.com");
+        webView.getEngine().load("http://www.google.com");
     }    
     
 }
